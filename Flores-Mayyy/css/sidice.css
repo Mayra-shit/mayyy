@@ -3,9 +3,8 @@
 #card {
   height: 500px;
   width: 800px;
-  margin: 5em auto;
+  margin-top: 50px;
   position: fixed;
-  top: -15px;
   left: 15%;
   display: flex;
   visibility: hidden;
