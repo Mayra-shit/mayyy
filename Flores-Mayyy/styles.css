@@ -10,7 +10,7 @@ body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-y: auto; /* Permite el scroll en móviles */
 }
 
 .page {
@@ -491,6 +491,7 @@ body {
 }
 
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .container {
         grid-template-columns: 100%;
@@ -543,6 +544,7 @@ body {
         padding: 20px 10px;
         background-color: var(--red);
         width: 100%;
+        position: relative;
     }
     .footer div {
         width: 100px;
@@ -585,7 +587,7 @@ body {
         gap: 8px; /* Espacio entre los divs */
         padding: 15px;
         background-color: var(--red);
-        margin-top: auto; /* Hace que el footer siempre quede abajo */
+        margin-top: auto;
     }
     .footer div {
         width: 80px;
