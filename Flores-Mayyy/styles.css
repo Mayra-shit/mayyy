@@ -10,7 +10,7 @@ body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
     margin: 0;
-    overflow-y: auto; /* Permite el scroll en móviles */
+    overflow: hidden;
 }
 
 .page {
@@ -492,6 +492,13 @@ body {
 
 
 @media (max-width: 480px) {
+
+    body {
+        font-family: 'Lato', sans-serif;
+        height: 100vh;
+        margin: 0;
+        overflow-y: auto; /* Permite el scroll en móviles */
+    }
     .container {
         display: grid;
         grid-template-columns: 100%;
