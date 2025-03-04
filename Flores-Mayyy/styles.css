@@ -584,8 +584,8 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 8px; /* Espacio entre los divs */
-        padding: 15px;
+        gap: 29px; /* Espacio entre los divs */
+        padding: 2px;
         background-color: var(--red);
         margin-top: auto;
     }
@@ -599,6 +599,7 @@ body {
         color: black;
         border-radius: 6px;
         font-size: 12px;
-        margin-top:250px;
+        margin-top:250px; 
+
     }
 }
