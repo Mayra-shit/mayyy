@@ -542,6 +542,7 @@ body {
         gap: 10px;
         padding: 20px 10px;
         background-color: var(--red);
+        width: 100%;
     }
     .footer div {
         width: 100px;
@@ -558,12 +559,18 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav"
+            "section"
+            "aside"
+            "footer";
+        height: auto;
     }
     .main-content {
-        flex: 1;
+        text-align: center;
     }
     .side-content img {
         width: 100%;
@@ -577,11 +584,11 @@ body {
         flex-wrap: wrap;
         gap: 8px; /* Espacio entre los divs */
         padding: 15px;
-        margin-top: auto;
         background-color: var(--red);
+        margin-top: auto; /* Hace que el footer siempre quede abajo */
     }
     .footer div {
-        width: 80px; /* Tamaño más pequeño */
+        width: 80px;
         height: 35px;
         display: flex;
         align-items: center;
@@ -592,4 +599,3 @@ body {
         font-size: 12px;
     }
 }
-
