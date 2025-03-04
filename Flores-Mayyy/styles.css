@@ -584,8 +584,8 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 29px; /* Espacio entre los divs */
-        padding: 28px;
+        gap: 50px; /* Espacio entre los divs */
+        padding: 12px;
         background-color: var(--red);
         margin-top: auto;
     }
